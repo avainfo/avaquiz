@@ -116,10 +116,10 @@ article div {
     transition-duration: 0.3s;
 }
 
-section > h2 {
+section > h2:not(.questions h2) {
     color: #3D3D3D;
     font-family: Work Sans;
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -127,6 +127,8 @@ section > h2 {
     width: 86vw;
     margin-right: auto;
     margin-left: auto;
+    text-align: justify;
+    white-space: pre-line;
 }
 
 footer {

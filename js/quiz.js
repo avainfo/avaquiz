@@ -38,14 +38,14 @@ function loadDatas() {
     loadAnswers(getDatas(index)[1]);
 }
 
-function loadAnswers(answers) {
-    for(let i = 0; i < answers.length; i++) {
+function loadAnswers(posAnswers) {
+    for(let i = 0; i < posAnswers.length; i++) {
         let art = document.createElement("article");
         let h2 = document.createElement("h2");
         let check = document.createElement("div");
 
         art.onclick = () => select(art, i + 1);
-        h2.textContent = answers[i];
+        h2.textContent = posAnswers[i];
 
         art.appendChild(h2);
         art.appendChild(check);
@@ -73,7 +73,7 @@ function loadSecondPart() {
     if(document.querySelector(".questions").style.display !== "none") {
         document.querySelector(".questions").style.display = "none";
         document.querySelector(".sec-part").style.display = "unset";
-        document.querySelector(".sec-part h2").textContent = getExplication(parseInt(sessionStorage.getItem("q")))
+        document.querySelector(".sec-part h2").textContent = getExplication(parseInt(sessionStorage.getItem("q"))).replace("\\n", "\n\n")
     } else {
         if(parseInt(sessionStorage.getItem("q")) < JSON.parse(sessionStorage.getItem("x")).length - 1) {
             let as = JSON.parse(sessionStorage.getItem("x"))[parseInt(sessionStorage.getItem("q"))]["Answers"].toString().split(",");
@@ -86,8 +86,6 @@ function loadSecondPart() {
                     answers = answers.filter(n => n != a)
                 }
             });
-            console.log(sessionStorage.getItem("points"))
-            points -= answers.length;
             sessionStorage.setItem("points", points)
 
             sessionStorage.setItem("q", parseInt(sessionStorage.getItem("q")) + 1);
