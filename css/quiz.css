@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500&family=Work+Sans:wght@300;500;700&display=swap');
+
+body, h1 {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: 2vh 7vw 0;
+}
+
+header img {
+    height: 10vh;
+}
+
+header h3 {
+    margin: 0;
+    color: #C0C0C0;
+    font-family: Work Sans;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/***** Status *****/
+.status {
+    margin: 1vh 7vw 0;
+}
+
+.status h1 {
+    color: #000;
+    font-family: Work Sans;
+    font-size: 3.5em;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+}
+
+.status h1 span {
+    font-family: Work Sans;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+}
+
+.status h1 span:first-child {
+    color: #000;
+}
+
+.status h1 span:last-child {
+    color: #C0C0C0;
+}
+
+.status > div {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.status .q {
+    width: calc(86vw / 11 - (20px * 10) / 11);
+    height: 10px;
+    border-radius: 50px;
+    background-color: #E7E7E7;
+}
+
+/***** Questions *****/
+.questions {
+    margin: 4vh 7vw;
+}
+
+.questions h2 {
+    color: #000;
+    font-family: Work Sans;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+}
+
+.questions > h2 {
+    color: #3D3D3D;
+}
+
+article {
+    padding: 0 50px;
+    border-radius: 30px;
+    border: #E7E7E7 5px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 7vh;
+    transition-duration: 0.3s;
+    margin-top: 3vh;
+}
+
+article div {
+    height: 2vh;
+    width: 2vh;
+    border: #E7E7E7 5px solid;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+}
+
+section > h2 {
+    color: #3D3D3D;
+    font-family: Work Sans;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 5vh;
+    width: 86vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: 7vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: #C0C0C0;
+    font-family: Work Sans;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+    width: calc(50vw - 14vw);
+    margin-left: 7vw;
+}
+
+footer button {
+    outline: none;
+    border: none;
+    width: calc(50vw - 14vw);
+    margin-right: 7vw;
+    font-size: 2.5em;
+    color: #FFF;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+    border-radius: 20px;
+    background: #FD6001;
+    height: 5vh;
+}

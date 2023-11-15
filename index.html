@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AvA Quizz</title>
+    <link rel="icon" href="https://files.gandi.ws/gandi59484/image/d41d8cd98f00b204e9800998ecf8427e.ico"
+          type="image/x-icon"/>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/quiz.js"></script>
+    <script src="js/exceltojs.js"></script>
+</head>
+<body onload="readExcel()">
+<header>
+    <img src="assets/images/logo.png" alt="Logo de l'entreprise">
+</header>
+<section>
+    <label for="pseudo">Entrez votre nom</label>
+    <input type="text" name="pseudo" id="pseudo">
+</section>
+<footer>
+    <button type="button" onclick="start()">Commencer</button>
+</footer>
+</body>
+</html>

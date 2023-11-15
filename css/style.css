@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500&family=Work+Sans:wght@300;500;700&display=swap');
+
+body {
+    margin: 0;
+    background-image: url("../assets/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/***** Header *****/
+header {
+    display: flex;
+}
+
+header img {
+    margin: 15vh auto;
+    height: 20vh;
+}
+
+/***** Input *****/
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75vw;
+    margin: 0 auto;
+    height: 8vh;
+}
+
+section label {
+    font-size: 2.5em;
+    font-family: "Work Sans";
+}
+
+section input {
+    height: 5vh;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.09);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 2.5em;
+}
+
+footer {
+    margin: auto auto 7vh;
+}
+
+footer button {
+    display: block;
+    outline: none;
+    border: none;
+    width: 50vw;
+    font-size: 2.5em;
+    color: #FFF;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+    border-radius: 30px;
+    background: #FD6001;
+    height: 6vh;
+}
