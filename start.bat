@@ -1,3 +1,5 @@
+python qr_code.py
+
 python -m http.server
 
 :: IP: 192.168.255.255
