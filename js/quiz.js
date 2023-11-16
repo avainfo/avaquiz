@@ -90,6 +90,8 @@ function loadSecondPart() {
 
             sessionStorage.setItem("q", parseInt(sessionStorage.getItem("q")) + 1);
             location.href = "../pages/quiz.html"
+        } else {
+            location.href = "../pages/score.html"
         }
     }
 }
