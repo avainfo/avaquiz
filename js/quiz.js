@@ -45,7 +45,7 @@ function loadAnswers(posAnswers) {
         let check = document.createElement("div");
 
         art.onclick = () => select(art, i + 1);
-        h2.textContent = posAnswers[i];
+        h2.textContent = posAnswers[i].toString().replace("true", "Vrai").replace("false", "Faux");
 
         art.appendChild(h2);
         art.appendChild(check);
